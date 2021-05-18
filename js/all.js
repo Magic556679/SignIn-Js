@@ -20,7 +20,7 @@ loginBtn.addEventListener('click', login);
         document.cookie = `hexToken=${token}; expires=${new Date(expired)}`;
         
         if(res.data.success == true){
-            window.location.href='/product.html';
+            window.location.href='product.html';
         }else if(res.data.success == false){
             alert('請重新輸入');
         } 
